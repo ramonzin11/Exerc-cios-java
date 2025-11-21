@@ -1,12 +1,13 @@
+//*Calculadora de IMC!
 import java.util.Scanner;
-
 public class calculadoraImc{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("-------- Descubra seu IMC --------");
 
         //? Pedindo para o usuário inserir o peso e a sua altura.
-        System.out.println("qual é o seu peso: ");
+        System.out.print("Qual é o seu peso: ");
         double pesodoUsuario = scanner.nextDouble();
 
         System.out.print("Qual é a sua altura : ");
