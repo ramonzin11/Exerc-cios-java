@@ -1,3 +1,4 @@
+//* Avaliação do aluno 
 import java.util.Scanner;
 
 public class avaliacaoAluno {
@@ -5,6 +6,7 @@ public class avaliacaoAluno {
         
         Scanner scanner = new Scanner(System.in);
 
+        //? Pedindo para o usuario inserir as notas e a frequência do aluno
         System.out.print("Digite a primeira nota : ");
         double nota1 = scanner.nextDouble();
 
@@ -17,17 +19,20 @@ public class avaliacaoAluno {
         System.out.print("Qual foi a frequência do aluno : ");
         int frenquenciaDoAluno = scanner.nextInt();
 
-        double resultadoDamedia = (nota1 + nota2 + nota3) / 2;
+        //? Essa variavel vai armazenar a media do aluno
+        double resultadoDamedia = (nota1 + nota2 + nota3) / 3;
 
+        //? Essa estrutura vai verificar se o aluno foi Aprovando ou reprovado.
         if(7.0 <= resultadoDamedia && 75 <= frenquenciaDoAluno){
             String statusFinal = "Parabéns aprovado";
             System.out.println("O estudante foi Aprovado ou Reprovado: " + statusFinal);
         }else{ 
-            String statusFinal = "infelizmente reporvado";
+            String statusFinal = "Infelizmente reporvado";
             System.out.println("O estudando foi aprovado ou Reprovado : " + statusFinal);
         };
         
-        System.out.println("Sua média foi " + resultadoDamedia + " e sua frequência foi " + frenquenciaDoAluno);
+        //? Aqui vai printar a média e a frequêcia do aluno. 
+        System.out.println("Sua média foi: " + resultadoDamedia + " e sua frequência foi: " + frenquenciaDoAluno);
 
         scanner.close();
 
