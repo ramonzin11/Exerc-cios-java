@@ -14,7 +14,7 @@ public class calculadora{
     System.out.print("Digite o segundo valor : ");
     double num2 = scanner.nextDouble();
 
-    System.out.println("Digite o operador (+, -, * ou / ) ");
+    System.out.print("Digite o operador (+, -, * ou / ) : ");
     String operadorStr = scanner.next();
 
     //? Garantindo que a variavel receba apenas a primeiro str inserida pelo usuario
