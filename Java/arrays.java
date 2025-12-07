@@ -15,7 +15,8 @@ public class arrays{
         //? Nesse loop vai realizar a soma da notas.
         for(int i = 0; i < notas.length; i++){
             somatotal = somatotal + notas[i];
-            //? Aqui va armazenar a média do total das notas
+            
+            //? Aqui vai armazenar a média do total das notas
             mediaTotal = somatotal/2;
             
         }
