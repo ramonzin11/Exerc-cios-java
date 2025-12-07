@@ -7,15 +7,20 @@ public class arrays{
         //? Criando a variavel que vai receber a soma de todas as notas 
         double somatotal = 0;
 
+        //? Aqui va armazenar a média do total das notas
+        double mediaTotal = 0;
+
         System.out.println("=-=-=-=- Somando todas as notas =-=-=-=-");
 
         //? Nesse loop vai realizar a soma da notas.
         for(int i = 0; i < notas.length; i++){
             somatotal = somatotal + notas[i];
+            //? Aqui va armazenar a média do total das notas
+            mediaTotal = somatotal/2;
             
         }
 
         //? Aqui vai mostrar o total de todas as notas somadas 
-        System.out.println("A soma total de todas as notas : " + somatotal);
+        System.out.println("A soma total de todas as notas : " + mediaTotal);
     }
 }
