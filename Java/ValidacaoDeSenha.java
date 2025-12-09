@@ -23,7 +23,7 @@ public class ValidacaoDeSenha {
 
             System.out.print("SENHA: ");
             String senhaInserida = scanner.nextLine();
-
+            
             //? Bloco de Decisão: Verifica se as credenciais estão corretas. 
             //? Usa .equals() para comparar Strings e && (E lógico) para combinar as condições.
             if (usuarioInserido.equals(usuarioValido) && senhaInserida.equals(senhaValida)) {
