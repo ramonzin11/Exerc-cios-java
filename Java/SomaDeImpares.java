@@ -21,9 +21,7 @@ public class SomaDeImpares {
         }
 
         System.out.println("A soma de todos os números Impares: " + somaTotal);
-              
-
-
+        
         scanner.close();
     
     }
