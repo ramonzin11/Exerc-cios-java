@@ -4,7 +4,7 @@ public class ValidacaoDeSenha {
     public static void main(String[] args) {
 
         //? Variáveis que armazenam as credenciais válidas e o estado do login.
-        String usuarioValido = "RAMON NEVES";
+        String usuarioValido = "RAMON FARIA";
         String senhaValida = "Java123";
         int tentativasUsuario = 0;
         boolean loginLiberado = false; //? Essa variável é a FLAG/Variável de Controle do loop.
