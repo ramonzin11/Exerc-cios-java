@@ -28,7 +28,7 @@ public class avaliacaoAluno {
             System.out.println("O estudante foi Aprovado ou Reprovado: " + statusFinal);
         }else{ 
             String statusFinal = "Infelizmente reporvado";
-            System.out.println("O estudando foi aprovado ou Reprovado : " + statusFinal);
+            System.out.println("O estudande foi aprovado ou Reprovado : " + statusFinal);
         };
         
         //? Aqui vai printar a média e a frequêcia do aluno. 
