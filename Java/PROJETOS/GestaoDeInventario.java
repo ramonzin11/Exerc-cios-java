@@ -1,89 +1,101 @@
 package Java.PROJETOS;
 import java.util.Scanner;
+
+/**
+ * @author RAMON NEVES DE FARIA
+ * Projeto: Gestão de Inventário Pro
+ * Descrição: Sistema para controle de fluxo de produtos e análise de estoque crítico.
+ */
 public class GestaoDeInventario {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
 
+        // 1. Definição das estruturas de armazenamento (Arrays Paralelos)
         String[] nomesDoProdutos = new String[5];
         int[] quantidadeDoProdutos = new int[5];
         double[] valorUnitarioDoProduto = new double[5];
 
+        // 2. Variáveis de controle de fluxo e estatística
         boolean sairDoLoop = false;
-        double total = 0;
-        int intecaoDoUsuario;
+        double totalGeral = 0;
+        int opcao;
 
+        // 3. Loop Principal: Mantém o software rodando até que o usuário decida sair
         while (!sairDoLoop) {
-            System.out.println("\n=== BEM-VINDO AO MENU PRINCIPAL ===");
+            System.out.println("\n=== SISTEMA DE INVENTÁRIO V1.0 ===");
+            System.out.println("1: CADASTRAR PRODUTOS");
+            System.out.println("2: LISTAR ESTOQUE ATUAL");
+            System.out.println("0: ENCERRAR E GERAR RELATÓRIO");
 
-            System.out.println("1: CADASTRAS PRODUTO");
-            System.out.println("2: VER PRODUTOS CADASTRADOS");
-            System.out.println("0: SAIR DO SISTEMA");
+            System.out.print("\nSELECIONE UMA OPÇÃO: ");
+            opcao = scanner.nextInt();
 
-            System.out.print("\nQUAL OPÇÃO VOCÊ DESEJA: ");
-            intecaoDoUsuario = scanner.nextInt();
-
-            switch (intecaoDoUsuario) {
+            switch (opcao) {
                 case 1:    
+                    // Loop para preenchimento de todos os slots do inventário
                     for(int i = 0; i < nomesDoProdutos.length; i++) {
-                        System.out.println("\nCADASTRO DO PRODUTO " + (i + 1));
+                        System.out.println("\n--- CADASTRO DO ITEM " + (i + 1) + " ---");
                         
-                        scanner.nextLine();
+                        scanner.nextLine(); // Legenda: Limpa o buffer para ler Strings corretamente
 
-                        System.out.print("NOME: ");
+                        System.out.print("NOME DO PRODUTO: ");
                         nomesDoProdutos[i] = scanner.nextLine();
     
-                        System.out.print("QUANTIDADE: ");
+                        System.out.print("QUANTIDADE EM ESTOQUE: ");
                         quantidadeDoProdutos[i] = scanner.nextInt();
     
-                        System.out.print("VALOR UNITÁRIO: R$ ");
+                        System.out.print("PREÇO UNITÁRIO: R$ ");
                         valorUnitarioDoProduto[i] = scanner.nextDouble();
 
-                        System.out.println("REGISTRO REALIZADO COM SUCESSO!!!");
-                        System.out.println("===============================================");
+                        System.out.println("SITUAÇÃO: Registrado com sucesso!");
                     }
                     break;
 
                 case 2:
-                    for(int i = 0; i < quantidadeDoProdutos.length; i++){
-                        System.out.println("\nPRODUTO " + (i + 1));
-                        System.out.println("NOME: " + nomesDoProdutos[i]);
-                        System.out.println("QUANTIDADE: " + quantidadeDoProdutos[i]);
-                        System.out.println("VALOR UNITÁRIO: R$ " + valorUnitarioDoProduto[i]);
-                        System.out.println("===============================================");
+                    // Exibição simples dos dados cadastrados nos vetores
+                    System.out.println("\n--- CONSULTA DE PRODUTOS ---");
+                    for(int i = 0; i < nomesDoProdutos.length; i++){
+                        System.out.println("ID: " + i + " | Item: " + nomesDoProdutos[i] + " | Qtd: " + quantidadeDoProdutos[i]);
                     }
                     break;
+
                 case 0:
+                    // Flag de saída para encerrar o loop e seguir para o relatório final
                     sairDoLoop = true;
                     break;
+
                 default:
-                    System.out.println("OPÇÃO INVALIDA...TENTE NOVAMENTE!!!");
+                    System.out.println("ERRO: Opção inválida no sistema!");
                     break;
             }
-
-            
         }
 
-        System.out.println("\nRESUMO DO INVENTARIO: ");
+        // 4. Processamento Final e Relatório de Auditoria
+        System.out.println("\n===============================================");
+        System.out.println("          RELATÓRIO FINAL DE AUDITORIA          ");
+        System.out.println("===============================================");
 
         for(int i = 0; i < valorUnitarioDoProduto.length; i++){
-            System.out.println("===============================================");
-            System.out.println("\n" + (i + 1) + " " + nomesDoProdutos[i]);
-            System.out.println("O CUSTO DO PRODUTO: R$ " + (quantidadeDoProdutos[i] * valorUnitarioDoProduto[i]));
+            // Legenda: Cálculo do custo acumulado por tipo de produto
+            double custoLote = quantidadeDoProdutos[i] * valorUnitarioDoProduto[i];
+            totalGeral += custoLote;
 
+            System.out.println("\nPRODUTO: " + nomesDoProdutos[i].toUpperCase());
+            System.out.println("VALOR TOTAL EM LOTE: R$ " + custoLote);
+
+            // Regra de Negócio: Verificação de nível crítico de segurança
             if(quantidadeDoProdutos[i] < 5){
-                System.out.println("O produto: " + nomesDoProdutos[i] + " está abaixo de 5 unidades");
-                System.out.println("Unidade atual: " + quantidadeDoProdutos[i]);
+                System.out.println(">> STATUS: [!] ALERTA DE ESTOQUE BAIXO");
+                System.out.println(">> AÇÃO RECOMENDADA: Repor unidades imediatamente.");
             }
         }
 
-        for(int i = 0; i < valorUnitarioDoProduto.length; i++){
-           total =+ valorUnitarioDoProduto[i];
-        }
-
+        // 5. Finalização: Apresentação do Patrimônio Total Cadastrado
+        System.out.println("\n-----------------------------------------------");
+        System.out.println("PATRIMÔNIO TOTAL AVALIADO: R$ " + totalGeral);
         System.out.println("===============================================");
-        System.out.println("\nTotal de todos os produtos: R$ " + total);
 
-        scanner.close();
+        scanner.close(); // Legenda: Encerra o recurso de leitura para liberar memória
     }
 }
