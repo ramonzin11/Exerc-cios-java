@@ -7,7 +7,7 @@ public class tabuadeiroAutomático {
         System.out.print("=-=-=-= TABUADEIRO JAVA =-=-=-=-=");
 
         System.out.println("\n==================================");
-        System.out.print("\nO valor de qual tabuada você deseja saber: ");
+        System.out.print("O valor de qual tabuada você deseja saber: ");
         
         // Captura o número base que será multiplicado.
         int multiplicador = scanner.nextInt();
