@@ -1,17 +1,12 @@
 package Java.PROJETOS;
 import java.util.Scanner;
 
-/**
- * @author RAMON NEVES DE FARIA
- * Projeto: Gestão de Inventário Pro
- * Descrição: Sistema para controle de fluxo de produtos e análise de estoque crítico.
- */
 public class GestaoDeInventario {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
 
-        // 1. Definição das estruturas de armazenamento (Arrays Paralelos)
+        // 1. Definição das estruturas de armazenamento (Arrays Paralelos) 
         String[] nomesDoProdutos = new String[5];
         int[] quantidadeDoProdutos = new int[5];
         double[] valorUnitarioDoProduto = new double[5];
