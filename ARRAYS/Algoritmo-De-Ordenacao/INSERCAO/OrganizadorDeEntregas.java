@@ -1,4 +1,4 @@
-package Java.ARRAYS.ALGORITMOSDEORDENACAO.INSERCAO;
+
 
 public class OrganizadorDeEntregas {
     public static void main(String[] args) {

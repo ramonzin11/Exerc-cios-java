@@ -1,4 +1,4 @@
-package Java.ARRAYS.ALGORITMOSDEORDENACAO.SELECAO;
+
 
 public class RankingDecrescente {
     public static void main(String[] args) {

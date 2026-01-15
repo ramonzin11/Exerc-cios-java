@@ -1,4 +1,4 @@
-package Java.ARRAYS.ALGORITMOSDEORDENACAO.SELECAO;
+
 
 public class ContadorDeTrocas {
     public static void main(String[] args) {

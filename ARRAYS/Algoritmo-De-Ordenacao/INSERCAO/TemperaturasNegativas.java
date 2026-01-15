@@ -1,4 +1,3 @@
-package Java.ARRAYS.ALGORITMOSDEORDENACAO.INSERCAO;
 
 public class TemperaturasNegativas {
     public static void main(String[] args) {

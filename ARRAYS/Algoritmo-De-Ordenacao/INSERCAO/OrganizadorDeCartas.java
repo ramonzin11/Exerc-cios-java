@@ -1,4 +1,4 @@
-package Java.ARRAYS.ALGORITMOSDEORDENACAO.INSERCAO;
+
 
 public class OrganizadorDeCartas {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Java.ARRAYS.ALGORITMOSDEORDENACAO.BOLHA;
+
 
 public class InteligenteOtimizacao {
     public static void main(String[] args) {

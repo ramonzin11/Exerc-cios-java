@@ -1,4 +1,4 @@
-package Java.ARRAYS.ALGORITMOSDEORDENACAO.SELECAO;
+
 
 public class OrdenacaoDeEstoque {
     public static void main(String[] args) {
