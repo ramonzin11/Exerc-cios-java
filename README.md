@@ -8,8 +8,8 @@ Este repositório contém meus estudos e resoluções de exercícios práticos e
 
 As pastas estão organizadas por tópicos para facilitar a navegação:
 
-* **[Estruturas Condicionais](./Java/ESTRUTURASCONDICIONAIS):** Exercícios focados em controle de fluxo (`if`, `else`, `switch case`).
-* **[Estruturas de Repetição](./Java/ESTRUTURASDEREPETICAO):** Práticas com laços (`for`, `while`, `do-while`).
+* **[Estruturas Condicionais](./Java/Estruturas-Condicionais):** Exercícios focados em controle de fluxo (`if`, `else`, `switch case`).
+* **[Estruturas de Repetição](./Java/Estruturas-De-Loop):** Práticas com laços (`for`, `while`, `do-while`).
 * **[Arrays](./Java/ARRAYS):** Manipulação de vetores, matrizes e algoritmos de ordenação.
 * **[Projetos](./Java/PROJETOS):** Pequenas aplicações que unem diversos conceitos aprendidos.
 
