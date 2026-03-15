@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class cofreAutomatico {
+public class CofreAutomatico {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

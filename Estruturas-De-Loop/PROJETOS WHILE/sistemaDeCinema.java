@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class sistemaDeCinema {
+public class SistemaDeCinema {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
