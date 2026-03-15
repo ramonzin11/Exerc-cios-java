@@ -12,26 +12,74 @@ O objetivo é consolidar os fundamentos da linguagem, desde a lógica básica at
 
 ## 📁 Estrutura do Repositório
 
-As pastas estão organizadas por tópicos para facilitar a navegação:
+### 🔀 ARRAYS
 
-| Pasta | Conteúdo |
+**Manipulando-Arrays/**
+| Arquivo | Descrição |
 |---|---|
-| `Estruturas-Condicionais` | Exercícios com `if`, `else`, `switch/case` |
-| `Estruturas-de-Repetição` | Laços `for`, `while`, `do-while` |
-| `Arrays` | Vetores, matrizes e algoritmos de ordenação |
-| `Projetos` | Pequenas aplicações práticas |
+| `AlgoritmoDeAcumulacao.java` | Sistema de monitoramento climático com soma e média |
+| `AlgoritmoDeBuscaSimples.java` | Sistema de segurança com busca linear e flag booleana |
+
+**Algoritmo-De-Ordenacao/BOLHA/**
+| Arquivo | Descrição |
+|---|---|
+| `FiltroDePrecos.java` | Ordenação crescente e decrescente de produtos |
+| `InteligenteOtimizacao.java` | Bubble Sort otimizado com flag de parada antecipada |
+
+**Algoritmo-De-Ordenacao/INSERCAO/**
+| Arquivo | Descrição |
+|---|---|
+| `OrganizadorDeEntregas.java` | Insertion Sort com contador de deslocamentos em logística |
+
+**Algoritmo-De-Ordenacao/SELECAO/**
+| Arquivo | Descrição |
+|---|---|
+| `OrdenacaoDeEstoque.java` | Selection Sort aplicado a controle de estoque |
 
 ---
 
-## 🚀 Projeto em Destaque: Sistema de Gestão de Almoxerifado
+### 🔁 Estruturas-De-Loop
 
-Projeto mais completo do repositório — simula o controle real de um almoxerifado com foco em organização e eficiência.
+**PROJETOS WHILE/**
+| Arquivo | Descrição |
+|---|---|
+| `CalculadorDeServico.java` | Menu de serviços com switch, acumuladores e desconto progressivo |
+| `CofreAutomatico.java` | Sistema de metas financeiras com depósitos e validação |
+| `SistemaDeCinema.java` | Controle de venda de ingressos com fechamento automático |
+| `ElevadorDeCarga.java` | Controle de peso com limite máximo e validação de carga |
+| `ValidacaoDeSenha.java` | Sistema de login com tentativas limitadas e flag de controle |
+
+---
+
+### 🔃 Estruturas-Condicionais
+
+| Arquivo | Descrição |
+|---|---|
+| `AvaliacaoAluno.java` | Cálculo de média com verificação de frequência e aprovação |
+| `calculadoraImc.java` | Calculadora de IMC com classificação por faixa de peso |
+| `ClassificadorDeTriangulos.java` | Classificação de triângulos com validação geométrica |
+
+---
+
+### 🚀 PROJETOS
+
+| Arquivo | Descrição |
+|---|---|
+| `GestorDeAlmoxarifado.java` | Sistema completo com cadastro, busca binária, Selection Sort e relatório |
+| `GestaoDeInventario.java` | Sistema de inventário com arrays paralelos e auditoria de estoque |
+
+---
+
+## 🏆 Projeto em Destaque: Gestor de Almoxarifado
+
+O projeto mais completo do repositório — um sistema de gestão real com múltiplos módulos integrados.
 
 **Funcionalidades:**
-- Controle de estoque com registro detalhado de materiais e insumos
-- Movimentação de itens com gerenciamento de entradas e saídas
-- Organização logística com lógica para evitar falta ou excesso de materiais
-- Aplicação sólida de variáveis, estruturas de decisão e repetição
+- Cadastro de produtos com arrays paralelos sincronizados
+- Busca Binária para consulta eficiente por ID
+- Ordenação automática via Selection Sort antes da busca
+- Relatório geral com valor patrimonial total e contagem de itens
+- Alerta automático para produtos com estoque crítico
 
 ---
 
@@ -41,6 +89,8 @@ Projeto mais completo do repositório — simula o controle real de um almoxerif
 - [x] Estruturas condicionais
 - [x] Estruturas de repetição
 - [x] Arrays e matrizes
+- [x] Algoritmos de ordenação (Bubble, Insertion, Selection Sort)
+- [x] Busca Binária
 - [ ] Métodos e funções
 - [ ] Orientação a objetos (POO)
 
@@ -50,3 +100,19 @@ Projeto mais completo do repositório — simula o controle real de um almoxerif
 
 Você precisará do JDK 17 ou superior instalado.
 ```bash
+# Clone o repositório
+git clone https://github.com/ramonzin11/Exerc-cios-java.git
+
+# Acesse a pasta desejada e compile
+javac NomeDoArquivo.java
+
+# Execute
+java NomeDoArquivo
+```
+
+---
+
+## 📬 Contato
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ramon-faria/)
+[![E-mail](https://img.shields.io/badge/E--mail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:rmfaria12@hotmail.com)
