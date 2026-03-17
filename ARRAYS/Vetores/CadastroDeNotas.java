@@ -5,7 +5,7 @@ public class CadastroDeNotas{
 
         double[] notas = new double[5];
         double totalDasNotas = 0;
-        double medias;
+        double media;
 
         for(int i = 0; i < notas.length; i++){
             System.out.print("Digite " + (i + 1) + "°" + " nota: ");
@@ -18,8 +18,8 @@ public class CadastroDeNotas{
             System.out.println(d);
         }
 
-        medias = totalDasNotas / notas.length;
-        System.out.println("A média das notas: " + medias);
+        media = totalDasNotas / notas.length;
+        System.out.println("A média das notas: " + media);
         System.out.println("\nA soma total de todas as notas: " + totalDasNotas);
 
         scanner.close(); 
