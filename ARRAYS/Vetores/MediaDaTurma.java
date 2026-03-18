@@ -29,5 +29,7 @@ public class MediaDaTurma {
         System.out.println("Alunos acima da média: " + acimaDamedia);
         System.out.println("A média dos " + notas.length + " alunos: " + mediaDosAlunos);
         System.out.println("A maior nota: " + maior);
+
+        scanner.close();
     }
 }
