@@ -7,7 +7,7 @@ public class CalculadoraImc {
         System.out.print("Peso (kg): ");
         double peso = scanner.nextDouble();
         
-        System.out.print("Altura (em metros, ex: 1.79): ");
+        System.out.print("Altura (em metros, ex: 1,79): ");
         double altura = scanner.nextDouble();
  
         double imc = peso / (altura * altura);
