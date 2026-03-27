@@ -10,7 +10,7 @@ public class ClassificadorDeTemperatura {
 
         if(tempAtual < 10){
             System.out.println("Temperatura muito frio: " + tempAtual + "°");
-        }else if(tempAtual >= 11 && tempAtual <= 17){
+        }else if(tempAtual >= 10 && tempAtual <= 17){
             System.out.println("Temperatura frio: " + tempAtual + "°");
         }else if(tempAtual >= 18 && tempAtual <= 25){
             System.out.println("Temperatura Agradável: " + tempAtual + "°");
