@@ -15,3 +15,4 @@ public class TabuadaCompleta {
         scanner.close();
     }
 }
+
