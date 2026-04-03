@@ -5,7 +5,7 @@ public class SomaDosImpares {
 
         System.out.println("Todos os números Impares de 1 a 10");
 
-        for(int i = 0; i < 10; i++){
+        for(int i = 1; i < 10; i++){
 
             if(i % 2 == 1){
                contator += i;
