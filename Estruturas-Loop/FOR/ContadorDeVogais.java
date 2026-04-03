@@ -10,7 +10,7 @@ public class ContadorDeVogais {
         
 
         for(int i = 0; i < palavra.length(); i++){
-            palavra.toLowerCase();
+            palavra = palavra.toLowerCase();
             char letra = palavra.charAt(i);
             if(letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u'){
                 contador++;
