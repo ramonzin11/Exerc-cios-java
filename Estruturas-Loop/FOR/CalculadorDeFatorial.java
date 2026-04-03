@@ -12,7 +12,7 @@ public class CalculadorDeFatorial {
             fatorial *= i; // mesmo que fatorial = fatorial * i
         }
 
-        System.out.println("O número favorado: " + fatorial);
+        System.out.println("O número fatorado: " + fatorial);
 
         scanner.close();
     }
