@@ -12,52 +12,96 @@ O objetivo é consolidar os fundamentos da linguagem, desde a lógica básica at
 
 ## 📁 Estrutura do Repositório
 
-### 🔀 ARRAYS
+### 📦 ARRAYS
 
-**Manipulando-Arrays/**
+**Vetores/**
 | Arquivo | Descrição |
 |---|---|
-| `AlgoritmoDeAcumulacao.java` | Sistema de monitoramento climático com soma e média |
-| `AlgoritmoDeBuscaSimples.java` | Sistema de segurança com busca linear e flag booleana |
+| `CadastroDeNotas.java` | Vetor de 5 notas com acumulador, exibição e cálculo de média |
+| `MaiorEMenorValor.java` | Busca do maior e menor valor em vetor de 6 números |
+| `MediaDaTurma.java` | Média de 8 alunos com contagem de alunos acima da média |
+| `InversaoDeVetor.java` | Inversão de vetor de 5 números sem usar segundo array |
+| `ControleDeEstoque.java` | Arrays paralelos com alerta de estoque abaixo do mínimo |
 
-**Algoritmo-De-Ordenacao/BOLHA/**
+**Matrizes/**
 | Arquivo | Descrição |
 |---|---|
-| `FiltroDePrecos.java` | Ordenação crescente e decrescente de produtos |
+| `CadastroDeAlunos.java` | Matriz 3x3 com cadastro de notas por aluno e prova |
+| `SomaDeColunas.java` | Soma de cada coluna de uma matriz 3x3 |
+| `DiagonalPrincipal.java` | Extração e soma dos elementos da diagonal principal |
+| `MatrizTransposta.java` | Transposição de matriz 3x3 trocando linhas por colunas |
+| `TabelaDeVendas.java` | Matriz de vendas com total por vendedor |
+
+**Ordenacoes/BOLHA/**
+| Arquivo | Descrição |
+|---|---|
+| `FiltroDePrecos.java` | Bubble Sort crescente e decrescente em array de preços |
 | `InteligenteOtimizacao.java` | Bubble Sort otimizado com flag de parada antecipada |
+| `OrdenacaoDeNotas.java` | Bubble Sort em array de notas do menor para o maior |
+| `RankingDeJogadores.java` | Bubble Sort em pontuações do maior para o menor |
+| `OrdenacaoDeIdades.java` | Bubble Sort em idades digitadas pelo usuário |
 
-**Algoritmo-De-Ordenacao/INSERCAO/**
+**Ordenacoes/INSERCAO/**
 | Arquivo | Descrição |
 |---|---|
 | `OrganizadorDeEntregas.java` | Insertion Sort com contador de deslocamentos em logística |
+| `FilaDeAtendimento.java` | Insertion Sort em senhas digitadas pelo usuário |
+| `CadastroOrdenado.java` | Insertion Sort em array de idades fixas |
+| `RankingDeVendedores.java` | Insertion Sort em vendas do maior para o menor |
+| `PlacarDeTorneio.java` | Insertion Sort em pontuações digitadas pelo usuário |
 
-**Algoritmo-De-Ordenacao/SELECAO/**
+**Ordenacoes/SELECAO/**
 | Arquivo | Descrição |
 |---|---|
-| `OrdenacaoDeEstoque.java` | Selection Sort aplicado a controle de estoque |
+| `OrdenacaoDeEstoque.java` | Selection Sort em array de estoque crescente |
+| `ClassificacaoDeProdutos.java` | Selection Sort em preços do mais barato ao mais caro |
+| `RankingDeAlunos.java` | Selection Sort em notas da maior para a menor |
+| `OrdenacaoDeSalarios.java` | Selection Sort em salários digitados pelo usuário |
+| `ListaDeEspera.java` | Selection Sort em fichas de atendimento |
 
 ---
 
-### 🔁 Estruturas-De-Loop
+### 🔁 Estruturas-Loop
 
-**PROJETOS WHILE/**
+**FOR/**
 | Arquivo | Descrição |
 |---|---|
-| `CalculadorDeServico.java` | Menu de serviços com switch, acumuladores e desconto progressivo |
+| `TabuadaCompleta.java` | Tabuada de 1 a 10 de qualquer número |
+| `SomaDosImpares.java` | Soma e exibição dos ímpares de 1 a 10 |
+| `ContadorDeVogais.java` | Contagem de vogais de uma palavra com charAt |
+| `PiramideDeNumeros.java` | Pirâmide de números com loop duplo aninhado |
+| `CalculadorDeFatorial.java` | Cálculo de fatorial com acumulador de multiplicação |
+
+**WHILE/**
+| Arquivo | Descrição |
+|---|---|
+| `ValidacaoDeSenha.java` | Sistema de login com tentativas limitadas e flag de controle |
 | `CofreAutomatico.java` | Sistema de metas financeiras com depósitos e validação |
 | `SistemaDeCinema.java` | Controle de venda de ingressos com fechamento automático |
 | `ElevadorDeCarga.java` | Controle de peso com limite máximo e validação de carga |
-| `ValidacaoDeSenha.java` | Sistema de login com tentativas limitadas e flag de controle |
+| `CalculadorDeServico.java` | Menu de serviços com acumuladores e desconto progressivo |
 
 ---
 
 ### 🔃 Estruturas-Condicionais
 
+**IF/**
 | Arquivo | Descrição |
 |---|---|
-| `AvaliacaoAluno.java` | Cálculo de média com verificação de frequência e aprovação |
-| `calculadoraImc.java` | Calculadora de IMC com classificação por faixa de peso |
+| `CalculadoraImc.java` | Calculadora de IMC com classificação por faixa de peso |
+| `AvaliacaoDeAluno.java` | Cálculo de média com verificação de frequência e aprovação |
 | `ClassificadorDeTriangulos.java` | Classificação de triângulos com validação geométrica |
+| `VerificadorDeIdade.java` | Classificação de idade em criança, adolescente, adulto e idoso |
+| `ClassificadorDeTemperatura.java` | Classificação de temperatura em 5 faixas |
+
+**SWITCH/**
+| Arquivo | Descrição |
+|---|---|
+| `CalculadoraBasica.java` | Calculadora com as 4 operações matemáticas |
+| `MenuDeRestaurante.java` | Menu de 5 pratos com nome e preço |
+| `ConversorDeMedidas.java` | Conversor de km, kg e Celsius |
+| `DiaDaSemana.java` | Exibe o dia da semana pelo número digitado |
+| `SistemaDeSuporteAoCliente.java` | Menu de suporte com 4 opções de atendimento |
 
 ---
 
@@ -86,9 +130,9 @@ O projeto mais completo do repositório — um sistema de gestão real com múlt
 ## 📌 Status dos estudos
 
 - [x] Lógica de programação
-- [x] Estruturas condicionais
-- [x] Estruturas de repetição
-- [x] Arrays e matrizes
+- [x] Estruturas condicionais (IF e Switch)
+- [x] Estruturas de repetição (FOR e WHILE)
+- [x] Vetores e Matrizes
 - [x] Algoritmos de ordenação (Bubble, Insertion, Selection Sort)
 - [x] Busca Binária
 - [ ] Métodos e funções
@@ -99,6 +143,7 @@ O projeto mais completo do repositório — um sistema de gestão real com múlt
 ## ⚙️ Como executar
 
 Você precisará do JDK 17 ou superior instalado.
+
 ```bash
 # Clone o repositório
 git clone https://github.com/ramonzin11/Exerc-cios-java.git
