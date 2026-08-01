@@ -20,7 +20,7 @@ public class ValidadorDeIdade {
             return "Adolescente";
         }else if(idade >= 18 && idade <=59){
             return "Adulto";
-        }else if(idade > 60){
+        }else if(idade >= 60){
            return "Idoso";
         }else{
             return "Idade inválida";

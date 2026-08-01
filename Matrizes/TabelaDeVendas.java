@@ -7,10 +7,10 @@ public class TabelaDeVendas {
         };
 
         System.out.println("--- Tabela de Vendas ---");
-        for(int i = 0; i < vendas.length; i++){
+        for (int i = 0; i < vendas.length; i++) {
             double totalVendedor = 0;
             System.out.print("Vendedor " + (i + 1) + ": ");
-            for(int j = 0; j < vendas[i].length; j++){
+            for (int j = 0; j < vendas[i].length; j++) {
                 System.out.print("R$ " + vendas[i][j] + " ");
                 totalVendedor += vendas[i][j];
             }
