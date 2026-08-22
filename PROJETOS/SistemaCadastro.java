@@ -93,7 +93,11 @@ public class SistemaCadastro {
     public static void lancarNota(int indice){ //! Responsável por lançar as 3 notas do aluno.
         for(int i = 0; i < 3; i++){
             System.out.print("Digite a " + (i + 1) + "ª nota: ");
-            notasDosAlunos[indice][i] = scanner.nextDouble();
+            double variavelAuxiliar = scanner.nextDouble();
+
+            if(variavelAuxiliar >= 0.0 && variavelAuxiliar <= 10.0){
+                notasDosAlunos[indice][i] = variavelAuxiliar;
+            }
         }
     }
 
